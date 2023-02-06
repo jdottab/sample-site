@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Slab&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navigation">
+            <div class="icon-title">Company</div>
+            <div class="nav slide-in">
+                <div class="nav-item nav-item1 txt">Home</div>
+                <div class="nav-item nav-item2 txt">About</div>
+                <div class="nav-item nav-item3 txt">Other</div>
+                <div class="nav-item nav-item4 txt">Else</div>
+            </div>
+            <div class="toggle-bar" onclick="ToggleNavBar()"></div>
+        </nav>
+        <main>
+            <div class="titles">
+                <h1 class="main-title">MAIN TITLE</h1>
+                <h5 class="sub-ttl">Subtitle, catphrase, or headline</h5>
+            </div>
+            <img src="https://wallpapercave.com/wp/wp6658601.jpg" alt="placeholder image">
+            <div class="btns">
+                <button type="button" class="btn btn1">Button 1</button>
+                <button type="button" class="btn btn2">Button 2</button>
+            </div>
+        </main>
+        <section class="sec1">
+            <h2 class="sec1-title">SECTION 1</h2>
+            <img class="sec-bkg" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/f9de6eb5-611b-4737-8688-f0296b643f95/d2ga4cw-d1026c1c-15fa-4c28-8dbe-c8a46c301277.jpg" alt="">
+            <div class="info">
+                <div class="paragraph">
+                    <p class="para-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id 
+                        est laborum.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="sec2">
+            <h2 class="sec2-title">SECTION 2</h2>
+            <div class="display-items">
+                <div class="item item1">
+                    <p class="short-txt">lorem ipsum dolor</p>
+                    <p class="diff-txt">Different text!</p>
+                    <div class="hvr-item"></div>
+                </div>
+                <div class="item item2">
+                    <p class="short-txt">lorem ipsum dolor</p>
+                    <p class="diff-txt">Different text!</p>
+                    <div class="hvr-item"></div>
+                </div>
+                <div class="item item3">
+                    <p class="short-txt">lorem ipsum dolor</p>
+                    <p class="diff-txt">Different text!</p>
+                    <div class="hvr-item"></div>
+                </div>
+            </div>
+            <div class="display-txt">
+                <div class="blurb">
+                    <h5>Subtitle</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit, sed do eiusmod
+                    </p>
+                </div>
+                <div class="blurb">
+                    <h5>Subtitle</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit, sed do eiusmod
+                    </p>
+                </div>
+                <div class="blurb">
+                    <h5>Subtitle</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit, sed do eiusmod
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="sec3 contact">
+            <h2 class="cntc-us">Contact Us</h2>
+            <form class="cntc">
+                <div class="name">
+                    <p class="label">Name: </p>
+                    <input class="form-name form" type="text" name="name" placeholder="ex:Cho Mba" id="">
+                </div>
+                <div class="email">
+                    <p class="label">Email: </p>
+                <input class="form-email form" type="email" name="email" placeholder="ex:firstlast@domain.com" id="">
+                </div>
+                <input class="btn" type="submit" value="submit">
+            </form>
+        </section>
+        <script>
+            let toggle = document.querySelector('.toggle-bar');
+            let navbar = document.querySelector('.nav');
+            let i = navbar.classList.length;
+            
+            function ToggleNavBar(){
+                if(navbar.style.display == 'none'){
+                    navbar.style.display = 'flex';
+                    navbar.classList.add('slide-in');
+                }
+                else{
+                    navbar.style.display = 'none';
+                    navbar.classList.remove(navbar.classList[i]);
+                }
+            }
+            
+            if(window.innerWidth > 900){
+                navbar.style.display = 'flex';
+                if(navbar.classList[i] == 'slide-in'){
+                    navbar.classList.remove(navbar.classList[i]);
+                }
+            }
+        </script>
+    </body>
+</html>
