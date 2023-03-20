@@ -356,6 +356,9 @@ section{
         position: relative;
         text-align: center;
     }
+    .info{
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 500px){
