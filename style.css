@@ -176,6 +176,14 @@ section{
     border-radius: 30px;
     margin: 0px auto;
 }
+.paragraph:hover{
+    cursor: default;
+    border: hairline, solid, var(--secondary-color);
+    box-shadow: 1px 2px 15px var(--secondary-color);
+    transform: translateY(5px);
+    transition: 200ms;
+    transition-timing-function: ease-in-out;
+}
 /*SECTION 2*/
 .sec2{
     background-color: rgb(40, 40, 40);
