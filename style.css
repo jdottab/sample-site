@@ -67,7 +67,7 @@ section{
 }
 .nav-item{
     margin: auto 10px;
-    font-size: .9em;
+    cursor: pointer;
 }
 .titles{
     position: absolute;
@@ -154,6 +154,7 @@ section{
     color: var(--secondary-color);
     font-size: 1.8em;
     text-shadow: 1px 2px 15px var(--bkg-color);
+    text-align: center;
 }
 .sec-bkg{
     position: fixed;
@@ -162,6 +163,8 @@ section{
 }
 .info{
     margin-left: 20px;
+    display: flex;
+    flex-direction: row;
 }
 .paragraph{
     width: 300px;
@@ -171,6 +174,7 @@ section{
     padding: 30px;
     box-shadow: 1px 10px 15px 1px rgba(0, 0, 0, 0.599);
     border-radius: 30px;
+    margin: 0px auto;
 }
 /*SECTION 2*/
 .sec2{
@@ -206,11 +210,14 @@ section{
     margin: 0px;
     text-align: center;
     bottom: 35%;
-    top: 35%;
+    top: 45%;
+    left: 0;
+    right: 0;
     z-index: 5;
 }
 .diff-txt{
     display: none;
+    position: absolute
 }
 @keyframes hovered {
     from{transform: translateY(100%);}
@@ -243,7 +250,9 @@ section{
     margin: 0px;
     text-align: center;
     bottom: 35%;
-    top: 35%;
+    top: 45%;
+    left: 0;
+    right: 0;
     z-index: 5;
     display: block;
     color: var(--secondary-color);
@@ -255,11 +264,12 @@ section{
     justify-content: center;
 }
 .blurb{
-    width: 110px;
-    height: 110px;
+    width: 170px;
+    height: 170px;
     margin: auto;
     color: var(--secondary-color);
     text-align: center;
+    font-size: larger;
 }
 .blurb h5{
     font-size: 1.1em;
@@ -286,6 +296,9 @@ section{
     top: 30%;
     left: 20%;
     right: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .label{
     display: inline-block;
@@ -296,6 +309,8 @@ section{
     border: 1px solid var(--secondary-color);
     color: var(--secondary-color);
     font-style:italic;
+    width: 250px;
+    height: 25px;
 }
 
 /*RESPONSIVE WEB DESIGN*/
