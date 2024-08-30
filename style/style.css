@@ -43,8 +43,6 @@ section{
 nav a button{
     border: none;
     text-align: center;
-    /* font-size: 1em;
-    font-weight: bold; */
     font-variant-caps:all-small-caps;
     background-color: transparent;
 }
@@ -57,7 +55,7 @@ h5{
 }
 .card-item *{
     width: 75%;
-    text-align: center;
+    text-align: right;
     margin: 0 auto;
 }
 .flex-item{
