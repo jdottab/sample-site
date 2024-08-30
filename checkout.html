@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="header-content flex-item">
+                <div class="logo"></div>
+                <nav>
+                    <a href="./main.html"><button>Home</button></a>
+                    <a href="./about.html"><button>About</button></a>
+                    <a href="./contact.html"><button>Contact</button></a>
+                    <a href="./learn.html"><button>Learn</button></a>
+                    <a href="./shop.html"><button>Shop</button></a>
+                </nav>
+            </div>
+        </header>
+        <main class="">
+            <section class="checkout">
+                <h1 class="h header-txt">Checkout</h1>
+                <h3 class="summary">Order Summary</h3>
+                <div class="order-container flex-item">
+                    <div class="order-list">
+
+                        <div class="order-total">Total: $<span class="total">0.00</span> for <span class="quantitiy">0</span> items ordered</div>
+                        <button type="submit" class="place-order">Complete Order</button>
+                    </div>
+                    <div class="payment">
+                        <form action="" class="customer flex-item flex-column">
+                            
+                            <input type="radio" name="zelle" id="z"><label for="zelle">Zelle</label>
+                            <input type="radio" name="cashapp" id="c">
+                            <label for="cname">Name</label>
+                            <input type="text" name="cname" id="c-name">
+                            <label for="cemail">Email</label>
+                            <input type="email" name="cemail" id="c-email">
+                            <label for="cphone">Phone #:</label>
+                            <input type="tel" name="cphone" id="c-phone">
+                            <div class="order">                             </div>
+                        </form>
+                    </div>
+                </div>
+                
+            </section>
+        </main>
+    </body>
+</html>
