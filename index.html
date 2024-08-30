@@ -6,11 +6,13 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     </head>
-    <body onload="ListProducts()">
-        <section class="products">
+    <body>
+        <section class="main flex-item flex-column">
             <header>
                 <div class="header-content flex-item">
-                    <div class="logo"></div>
+                    <div class="logo">
+                        <img src="./assets/hs_logo1.png" alt="herbalhealingslogo">
+                    </div>
                     <nav>
                         <a href="./index.html"><button>Home</button></a>
                         <a href="./about.html"><button>About</button></a>
@@ -21,26 +23,17 @@
                 </div>
             </header>
             <main>
-                <h1 class="h header-txt">Products</h1>
-                <div class="product-items grid-container">
-                </div>
-                <div class="flex-item flex-column" id="cart">
-                    <button type="button" class="cart-toggle" id="toggle">
-                        <img src="./assets/cart_bitmap.svg" alt="cart svg">
-                    </button>
-                    <div class="cart" id="cart-container">
-                        <div class="cart-items" id="cart-items" aria-placeholder="Nothing here..yet!">
-                        </div>
-                        <div class="cart-total">
-                            <h5>Total: $<span class="total"></span></h5>
-                        </div>
-                        <div class="checkout">
-                            <button type="button"><a href="./checkout.html">Checkout</a></button>
-                        </div>
+                <div class="banner flex-item">
+                    <div class="banner-img">
+                        <img src="./assets/DSC04272_1.jpg" alt="">
+                    </div>
+                    <div class="banner-txt p-txt card-item flex-item flex-column">
+                        <h3 class="h header-txt">Diabetic Herbal Healingz</h1>
+                        <p>Introduce the content here with a quick overview  of the products</p>
+                        <a href="./shop.html"><button class="rounded-btn">Learn More</button></a>
                     </div>
                 </div>
             </main>
         </section>
-        <script src="./index.js"></script>
     </body>
 </html>
