@@ -55,7 +55,7 @@ h5{
 }
 .card-item *{
     width: 75%;
-    text-align: right;
+    text-align: center;
     margin: 0 auto;
 }
 .flex-item{
@@ -116,6 +116,7 @@ h5{
     justify-content: center;
     gap: 2em;
 }
+.main h3{text-align:right;}
 .main .rounded-btn{
     border-color: var(--contrast);
     color: var(--contrast);
