@@ -27,12 +27,13 @@ function AddToCart(){
 
 //hard-coded inventory
 const inventory = [
-    {product1: {name: 'Avocado Pain Relief', id: 0, price: 3.50, img: './assets/avo_shop.png', category: 'item1'}},
-    {product2: {name: 'Bitter Kola', id: 1, price: 5.99, img: './assets/kola_shop.png', category: 'item2'}},
-    {product3: {name: 'Organic Karela Juice', id: 2, price: 2.19, img: './assets/okarela_juice.png', category: 'item3'}},
-    {product4: {name: 'Dandelion Tea', id: 0, price: 5.25, img: './assets/dandelion_tea.png', category: 'item1'}},
-    {product5: {name: 'Watermelon Juice', id: 1, price: 4.50, img: './assets/watermelon_juice.png', category: 'item2'}},
-    {product6: {name: 'Beet Root Juice', id: 2, price: 5.55, img: './assets/beet_root_juice.png', category: 'item3'}}
+    {product1: {name: 'Avocado Pain Relief', id: 0, price: 3.50, img: './assets/avo_shop.png', category: 'sprays_and_oils', learn_more: './learnmore/avoseed.html'}},
+    {product7: {name: 'Avocado Tea', id: 2, price: 2.99, img: './assets/WhatsApp Image 2024-09-19 at 1.17.04 PM.jpeg', category: 'powder_teas', learn_more: './learnmore/avoseed.html'}},
+    {product2: {name: 'Bitter Kola', id: 1, price: 5.99, img: './assets/kola_shop.png', category: 'sprays_and_oils', learn_more: './learnmore/avoseed.html'}},
+    {product3: {name: 'Organic Karela Juice', id: 2, price: 2.19, img: './assets/okarela_juice.png', category: 'sprays_and_oils', learn_more: './learnmore/avoseed.html'}},
+    {product4: {name: 'Dandelion Tea', id: 0, price: 5.25, img: './assets/dandelion_tea.png', category: 'juices', learn_more: './learnmore/avoseed.html'}},
+    {product5: {name: 'Watermelon Juice', id: 1, price: 4.50, img: './assets/watermelon_juice.png', category: 'juices', learn_more: './learnmore/avoseed.html'}},
+    {product6: {name: 'Beet Root Juice', id: 2, price: 5.55, img: './assets/beet_root_juice.png', category: 'juices', learn_more: './learnmore/avoseed.html'}}
 ]
 
 const product_container = document.querySelector('.product-items')
@@ -61,6 +62,7 @@ function ListProducts(cat){
             let product_name = Object.assign(document.createElement('h5'), { className: 'name' });
             let product_price = Object.assign(document.createElement('h5'), { className: 'price' });
             let addtocart = Object.assign(document.createElement('button'), { className: 'addtocart' });
+            let moreinfo = Object.assign(document.createElement('a'), { className: 'moreinfo' });
             
             img.src = item[0].img;
             product_name.textContent = item[0].name;
@@ -97,11 +99,14 @@ function ListProducts(cat){
                 shoppinglist.push(push_item);
                 cart_items.appendChild(push_item);
             })
+            moreinfo.textContent = 'More Info';
+            moreinfo.setAttribute('href', item[0].learn_more)
 
             item_img.appendChild(img);
             product_info.appendChild(product_name);
             product_info.appendChild(product_price);
             product_info.appendChild(addtocart);
+            product_info.appendChild(moreinfo);
 
             new_product.appendChild(item_img);
             new_product.appendChild(product_info);
